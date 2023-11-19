@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup as bs
 import requests
 from collections import defaultdict
 
-# Getting last_page to start parsing.
+# Getting last_page to continue parsing.
 with open('last.txt', 'r') as file:
     last_page = int(file.read())
 
