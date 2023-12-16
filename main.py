@@ -49,9 +49,15 @@ while loop:
         s = str(text)
         result = s.split('<br/>')[0]
         name = result.split('>')[1]
-        tag_result = s.split('<br/>')[1]
+        try:
+           tag_result = s.split('<br/>')[1]
+        except IndexError:
+           tag_result = None # or any other default value
         link = text.find_all("a")
-        href = link[1].get("href")
+        try:
+           href = link[1].get("href")
+        except IndexError:
+           href = None # or any other default value
         if name in X:
             collection[name].append([tag_result, href])
 
