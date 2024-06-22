@@ -60,6 +60,7 @@ while loop:
            href = None # or any other default value
         if name in X:
             collection[name].append([tag_result, href])
+        print(id)
 
     # Checking end of page
     if len(temp) < 20:
