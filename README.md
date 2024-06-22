@@ -14,4 +14,10 @@ click on links and enjoy.\
 *do not forget to update `last.txt` , enter last post number you stopped on, check in by copying post link*\
 
 for example
-*https://t.me/s/lnmanga/49220 last digits is post number*
+*https://t.me/s/lnmanga/49220 last digits is post number*\
+
+## How to run
+
+```
+python main.py
+```
